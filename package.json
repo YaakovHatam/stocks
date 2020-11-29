@@ -1,17 +1,19 @@
 {
-  "name": "tipranks-api",
-  "version": "1.0.0",
+  "name": "StocksIpoEstimator",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node install/install.main.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "https-proxy-agent": "^5.0.0",
     "node-fetch": "^2.6.1",
+    "sqlite3": "^5.0.0",
     "tipranks-api-v2": "^1.0.5"
   }
 }
